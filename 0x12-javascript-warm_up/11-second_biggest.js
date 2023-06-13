@@ -4,7 +4,7 @@ const argsAsList = Array.from(process.argv);
 function secondBiggest (argsAsList) {
   let biggest = 0;
   let secondBiggest = 0;
-  for (let args of argsAsList) {
+  for (const args of argsAsList) {
     if (parseInt(args) > biggest) {
       secondBiggest = biggest;
       biggest = parseInt(args);
