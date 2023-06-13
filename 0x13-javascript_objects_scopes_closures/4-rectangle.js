@@ -15,7 +15,7 @@ class Rectangle {
     }
   }
 
-  routate () {
+  rotate () {
     const tempHeight = this.height;
     this.height = this.width;
     this.width = tempHeight;
