@@ -1,3 +1,5 @@
 #!/usr/bin/node
 
-exports.myVar = 333;
+exports.changeMyVar = function () {
+    myVar = 333;
+}
