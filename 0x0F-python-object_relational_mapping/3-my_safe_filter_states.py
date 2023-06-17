@@ -13,7 +13,7 @@ if __name__ == '__main__':
     searched = sys.argv[4]
     cursor = db.cursor()
     cursor.execute(
-            """SELECT * FROM states 
+            """SELECT * FROM 'states'
             WHERE name LIKE %s ORDER BY id ASC""",
             (searched,))
     [print(state) for state in cursor.fetchall()]
