@@ -24,7 +24,7 @@ if __name__ == '__main__':
 
     for row in rows:
         state_id, state_name = row
-        print(f"({state_id}, {state_name})")
+        print(f"({state_id}, '{state_name}')")
 
     cursor_object.close()
     db.close()
