@@ -7,10 +7,10 @@ import sys
 import MySQLdb
 if __name__ == '__main__':
     db = MySQLdb.connect(
-            hst="localhost",
-            prt=3306,
-            usr=sys.argv[1],
-            pswd=sys.argv[2],
+            host="localhost",
+            port=3306,
+            user=sys.argv[1],
+            passwd=sys.argv[2],
             db=sys.argv[3]
         )
     cursor_object = db.cursor()
