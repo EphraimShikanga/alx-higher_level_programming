@@ -12,7 +12,7 @@ if __name__ == '__main__':
     searched = sys.argv[4].strip("'")
     cursor = db.cursor()
     cursor.execute(
-            """SELECT * FROM states 
+            """SELECT * FROM states
             WHERE name LIKE BINARY '{}'
             ORDER BY id ASC""".format(searched))
     [print(state) for state in cursor.fetchall()]
