@@ -11,7 +11,7 @@ if __name__ == '__main__':
     cursor_object = db.cursor()
     cursor_object.execute("SELECT * FROM states ORDER BY id ASC")
     for row in cursor_object.fetchall():
-        state_id, state_name=row
+        state_id, state_name = row
         print(f"({state_id}, '{state_name}')")
     cursor_object.close()
     db.close()
