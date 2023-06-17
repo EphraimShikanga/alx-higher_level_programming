@@ -14,6 +14,8 @@ if __name__ == '__main__':
     cursor.execute("""SELECT * FROM `states`
             WHERE name LIKE BINARY 'N%'
             ORDER BY id ASC""")
-    [print(state) for state in cursor.fetchall()]
+    for state in cursor.fetchall():
+        print(state)
+
     cursor.close()
     db.close()
