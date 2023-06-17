@@ -14,3 +14,4 @@ if __name__ == '__main__':
         print(f"({state_id}, '{state_name}')")
     cursor_object.close()
     db.close()
+
