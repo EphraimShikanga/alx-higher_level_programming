@@ -24,7 +24,5 @@ request({ url: apiUrl, json: true }, (error, response, body) => {
     }
   });
 
-  for (const [userId, count] of Object.entries(users)) {
-    console.log(`${userId}: ${count}`);
-  }
+  console.log(users);
 });
