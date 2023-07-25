@@ -24,5 +24,8 @@ request({ url: apiUrl, json: true }, (error, response, body) => {
     }
   });
 
-  console.log(users);
+  Object.entries(users).forEach(([userId, count], index, array) => {
+    const line = index === array.length - 1 ? `  '${userId}': ${count}` : `  '${userId}': ${count},`;
+    console.log(line);
+  });
 });
